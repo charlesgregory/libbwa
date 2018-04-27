@@ -5,7 +5,7 @@
 #ifdef USE_MALLOC_WRAPPERS
 #  include "malloc_wrap.h"
 #endif
-
+/*
 int ksprintf(kstring_t *s, const char *fmt, ...)
 {
 	va_list ap;
@@ -24,7 +24,7 @@ int ksprintf(kstring_t *s, const char *fmt, ...)
 	s->l += l;
 	return l;
 }
-
+*/
 #ifdef KSTRING_MAIN
 #include <stdio.h>
 int main()

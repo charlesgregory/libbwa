@@ -131,7 +131,7 @@ static void swap_endian_data(const bam1_core_t *c, int data_len, uint8_t *data)
 		else if (type == 'Z' || type == 'H') { while (*s) ++s; ++s; }
 	}
 }
-
+/*
 int bam_read1(bamFile fp, bam1_t *b)
 {
 	bam1_core_t *c = &b->core;
@@ -163,7 +163,7 @@ int bam_read1(bamFile fp, bam1_t *b)
 	if (bam_is_be) swap_endian_data(c, b->data_len, b->data);
 	return 4 + block_len;
 }
-
+*/
 
 #ifdef USE_VERBOSE_ZLIB_WRAPPERS
 // Versions of gzopen, gzread and gzclose that print up error messages
